@@ -1,0 +1,3 @@
+jsonschema
+pypdfium2
+Pillow

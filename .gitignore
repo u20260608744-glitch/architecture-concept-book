@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+private/
+tmp/
+output/
+dist/
+*.skp
+*.skb
+*.dwg
+*.dxf
+*.3dm
+*.blend
+*.pdf
+*.mp4
+.env
+.env.*

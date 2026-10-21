@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "phase": "production",
+  "project": {
+    "title": "合成练习：庭院研究",
+    "project_type": "architecture",
+    "stage": null,
+    "languages": [
+      "zh"
+    ],
+    "continuous_decimals": 2
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "path": "brief.md",
+      "kind": "brief",
+      "status": "read",
+      "sha256": "7e4a165e7fee67bdd64f3f0cf3ce6085c3b9efbf55615e0535a4cd8f10cffb27",
+      "authority": "Synthetic teaching brief only; no real-world authority",
+      "license": "Original MIT-licensed fixture"
+    }
+  ],
+  "schemes": [
+    {
+      "id": "A",
+      "name": "合成庭院方案"
+    }
+  ],
+  "facts": [
+    {
+      "id": "site",
+      "label": "用地面积",
+      "scheme_id": "A",
+      "quantity_kind": "continuous",
+      "value": 5000,
+      "unit": "m2",
+      "status": "source",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "brief.md: exercise data"
+    },
+    {
+      "id": "above",
+      "label": "概念地上面积",
+      "scheme_id": "A",
+      "quantity_kind": "continuous",
+      "value": 18000,
+      "unit": "m2",
+      "status": "source",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "brief.md: exercise data"
+    },
+    {
+      "id": "footprint",
+      "label": "建筑基底",
+      "scheme_id": "A",
+      "quantity_kind": "continuous",
+      "value": 1250,
+      "unit": "m2",
+      "status": "source",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "brief.md: exercise data"
+    },
+    {
+      "id": "homes",
+      "label": "住宅",
+      "scheme_id": "A",
+      "quantity_kind": "count",
+      "value": 120,
+      "unit": "homes",
+      "status": "source",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "brief.md: exercise data"
+    },
+    {
+      "id": "far",
+      "label": "练习 FAR",
+      "scheme_id": "A",
+      "quantity_kind": "continuous",
+      "value": 3.6,
+      "unit": "ratio",
+      "status": "derived",
+      "source_ids": [],
+      "locator": "Synthetic exercise calculation",
+      "formula": {
+        "op": "ratio",
+        "inputs": [
+          "above",
+          "site"
+        ]
+      }
+    },
+    {
+      "id": "density",
+      "label": "练习密度",
+      "scheme_id": "A",
+      "quantity_kind": "continuous",
+      "value": 25,
+      "unit": "%",
+      "status": "derived",
+      "source_ids": [],
+      "locator": "Synthetic exercise calculation",
+      "formula": {
+        "op": "percent",
+        "inputs": [
+          "footprint",
+          "site"
+        ]
+      }
+    },
+    {
+      "id": "parking",
+      "label": "停车",
+      "scheme_id": "A",
+      "quantity_kind": "count",
+      "value": null,
+      "unit": "spaces",
+      "status": "unknown",
+      "source_ids": [],
+      "locator": "No parking layout or estimate provided",
+      "blocking_unknown": false
+    }
+  ],
+  "figures": [
+    {
+      "id": "F1",
+      "status": "ready",
+      "path": "diagram.svg",
+      "sha256": "4fa5cbb681d39594e6ac6d5015943653e4df59f8df4c4c023b3de8542a51a737",
+      "kind": "diagram",
+      "source_ids": [
+        "S1"
+      ],
+      "scheme_ids": [
+        "A"
+      ],
+      "caption": "合成关系示意，非测绘、原模型导出或真实项目图纸"
+    }
+  ],
+  "pages": [
+    {
+      "id": "P-intent",
+      "order": 1,
+      "title": "围绕庭院组织共享空间",
+      "claim": "用庭院关系解释公共与私密的过渡，仍需图纸验证。",
+      "section": "设计意向",
+      "layout": "analysis",
+      "scheme_ids": [
+        "A"
+      ],
+      "figure_ids": [
+        "F1"
+      ],
+      "fact_ids": [],
+      "source_ids": [
+        "S1"
+      ],
+      "body": "这是教学用的设计主张，附图只说明组织关系。"
+    },
+    {
+      "id": "P-metrics",
+      "order": 2,
+      "title": "统一口径再比较",
+      "claim": "数据从练习任务书读取；未知停车保持待核。",
+      "section": "指标",
+      "layout": "comparison",
+      "scheme_ids": [
+        "A"
+      ],
+      "figure_ids": [],
+      "fact_ids": [
+        "site",
+        "above",
+        "footprint",
+        "homes",
+        "far",
+        "density",
+        "parking"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "body": "连续量显示两位小数，套数保持整数；这些数字不能移用于实际项目。"
+    }
+  ],
+  "deliverables": [],
+  "checks": []
+}
