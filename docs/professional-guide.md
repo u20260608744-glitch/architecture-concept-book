@@ -25,7 +25,7 @@
 
 ## 预览与详细输入
 
-仓库首页展示[原创册页预览](previews/concept-book-preview.png)和[双Skill流程](previews/skill-pipeline.png)。它们为虚构演示，不含GIGIRI项目原件或第三方参考册页。
+仓库首页直接展示项目所有者要求公开的GIGIRI实际成果：[方案总览](previews/gigiri-concept-plans.png)、[总图与指标](previews/gigiri-masterplan.png)、[功能](previews/gigiri-function.png)和[日照](previews/gigiri-sunlight.png)。均从已有概念册完整页面导出，没有重排成示意图；来源与项目预览权利单独记录。
 
 完整的[按类型输入指南](input-guide.md)列出各类原件、字段、格式、用途与缺项影响，并与GIGIRI资料类型对照。新用户不需要自行填写JSON；AI应读取原文件，只有确实阻塞指定能力的缺项才补问。
 
@@ -132,4 +132,4 @@ Skill 本身是指导 AI 组织工作的文件。完整成册需要所在环境�
 
 本包提炼了该项目“资料 → 场地 → 产品/设计回应 → 方案 → 总图 → 功能与日照 → 指标与取舍 → 成册 → 修订”的方法。实际旧册作为只读经验来源；它不是一个对所有项目都正确的标准。历史版本里保留过的旧术语、不同精度或未核内容，应通过新项目的统一规则修正，而不是作为模板复制。
 
-具体提炼见 [GIGIRI 方法说明](../architecture-concept-book/references/gigiri-method.md)。公开内容使用原创文字和虚构示例，不再分发实际项目图纸和参考册。
+具体提炼见 [GIGIRI 方法说明](../architecture-concept-book/references/gigiri-method.md)。方法与练习使用原创文字和虚构示例；公开仓库另按项目所有者明确要求展示部分GIGIRI实际成果页。完整模型、完整PDF和第三方参考册不随包公开。

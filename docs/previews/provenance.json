@@ -1,0 +1,48 @@
+{
+  "source_title": "GIGIRI Concept OP1–OP6 · existing project book",
+  "source_file": "Gigiri_Concept_OP1-OP6.pdf",
+  "source_sha256": "06b061b9a126945dc46d118af9a45a0e1eb9e5f9c36abec85825be98a75c9796",
+  "preview_method": "Direct full-page rasterization, no page redesign or content alteration",
+  "source_modified": false,
+  "full_source_pdf_distributed": false,
+  "authorization": "Project owner explicitly requested public previews from completed work.",
+  "license": "Project preview rights reserved; not covered by the repository MIT license.",
+  "pages": [
+    {
+      "path": "gigiri-concept-plans.png",
+      "source_page": 11,
+      "pixels": [
+        2000,
+        1500
+      ],
+      "sha256": "460bd2355e61d58dfb4722ba163d8ccd6a1773e6e93db7d3950ffe0e68e57cfa"
+    },
+    {
+      "path": "gigiri-masterplan.png",
+      "source_page": 12,
+      "pixels": [
+        2000,
+        1500
+      ],
+      "sha256": "af0afe77e5da478ccd3dd7b8af3409a34860c73e15c341522daf9bb158ae22dd"
+    },
+    {
+      "path": "gigiri-function.png",
+      "source_page": 30,
+      "pixels": [
+        2000,
+        1500
+      ],
+      "sha256": "333c5bb7990cd6fd9c5c8dfef5615ce1ead58079e860ea082c0afe937db01934"
+    },
+    {
+      "path": "gigiri-sunlight.png",
+      "source_page": 31,
+      "pixels": [
+        2000,
+        1500
+      ],
+      "sha256": "70cc1e81c3fbac2af4ff731e439c8b1a8c6ceeb414e70b1964f2943913d2dc7f"
+    }
+  ]
+}
