@@ -6,6 +6,12 @@
 
 它适用于从零制作，也适用于旧册改版、增减方案、模型替换、指标更新、翻译和版式修订。住宅、办公、商业、公建、室内、景观、城市设计和作品集可以共用方法，但分析项目、指标体系和图纸需求应分别确定。
 
+## 三类输入，AI负责逐页生成
+
+GIGIRI案例由用户提供SU白模型、预设视角和参考文本；每一页PPT/概念册由AI生成。用户并没有先制作好效果图、分析、完整文案或版式再让AI摆放。该分工应作为复现路径：用户交原始模型/机位/REF，AI读取、提取与计算、出图、写内容、逐页排版、成册和验证。
+
+见[AI逐页生成流程](../architecture-concept-book/references/ai-page-generation.md)。既有CAD、指标、照片和旧稿属于可选补充，缺少不会自动阻塞全册；模型无法给出的关键事实局部待核或补问。
+
 ## 完整功能与产物
 
 | 阶段 | 具体工作 | 可检查的产物 |
@@ -25,7 +31,7 @@
 
 ## 预览与详细输入
 
-仓库首页直接展示项目所有者要求公开的GIGIRI实际成果：[方案总览](previews/gigiri-concept-plans.png)、[总图与指标](previews/gigiri-masterplan.png)、[功能](previews/gigiri-function.png)和[日照](previews/gigiri-sunlight.png)。均从已有概念册完整页面导出，没有重排成示意图；来源与项目预览权利单独记录。
+仓库首页先展示用户提供的SU白模型原始机位图，再对应展示AI生成的GIGIRI实际页面：[方案总览](previews/gigiri-concept-plans.png)、[总图与指标](previews/gigiri-masterplan.png)、[功能](previews/gigiri-function.png)和[日照](previews/gigiri-sunlight.png)。均从已有概念册完整页面导出，没有重排成示意图；来源与项目预览权利单独记录。
 
 完整的[按类型输入指南](input-guide.md)列出各类原件、字段、格式、用途与缺项影响，并与GIGIRI资料类型对照。新用户不需要自行填写JSON；AI应读取原文件，只有确实阻塞指定能力的缺项才补问。
 

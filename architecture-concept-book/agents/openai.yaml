@@ -1,4 +1,4 @@
 interface:
   display_name: "建筑概念册 · 从资料到成册"
-  short_description: "从资料核查到设计叙事、模型图纸、专业排版与 PDF 验收的概念册制作流程"
-  default_prompt: "请使用 $architecture-concept-book，读取我提供的项目资料，从资料核查、章节策划、正文和图纸到排版，制作可维护的概念方案册并验证最终 PDF。"
+  short_description: "基于白模型、预设视角与参考文本，由AI逐页生成图文、分析、排版和完整概念册"
+  default_prompt: "请使用 $architecture-concept-book，读取我提供的SU白模型、预设视角和参考文本，由AI完成图像与分析、文案、每页排版和完整概念册，交付并验证约定的PPTX/PDF及可维护源文件。"
