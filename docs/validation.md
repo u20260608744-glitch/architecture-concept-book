@@ -28,3 +28,12 @@ python architecture-concept-book/scripts/book_tools.py check architecture-concep
 ```
 
 PDF 渲染命令见 [工具说明](../architecture-concept-book/references/tools.md)。仓库没有附带实际客户资料；可用自己有权使用的 PDF 验证渲染功能。
+
+
+## v1.1.0 增量验证
+
+新增按类型的详细输入指南、REF读取/转译与参考提交表、场地Skill交接流程，以及两张原创PNG预览和对应SVG图源。已重跑上述14项行为测试、合成清单核对及Skill结构校验；脚本行为未改动。
+
+两张预览已实际打开检查字体、对齐、主图与说明；它们是虚构排版/流程演示，不是GIGIRI原件。发布前核对新增本地链接、JSON、UTF-8/LF与素材范围，并从提交生成ZIP、全新解压复核。公开仓库、预览和下载包另做匿名访问及字节一致性验证。
+
+新场地Skill的独立验证边界见其公开仓库，不因配合使用而自动宣称已经完成真实测绘、模型或原生软件格式测试。原有37页PDF的只读验证属于v1.0.0编写记录，本次没有把历史检查当作任何新项目成品验收。
